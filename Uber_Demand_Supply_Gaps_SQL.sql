@@ -29,7 +29,9 @@ GROUP BY status;
 
 #4. Trips That Were Cancelled
 SELECT * FROM uber_data
-WHERE status = 'Cancelled';
+WHERE status = 'Cancelled'
+LIMIT 10;
+
 
 #5. Gap Analysis (When Cabs Were Not Available)
 SELECT pickup_point, COUNT(*) AS no_cab_requests
